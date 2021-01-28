@@ -19,7 +19,7 @@ public class MergeSort {
 
         // Copying our sub Arrays into temporaries
         for (int i = 0; i < leftArray.length; i++) {
-            leftArray[i] = array[lowestIndex + i];
+            leftArray[i] = array[lowestIndex + i]; //left array holds left half our
         }
 
         for (int i = 0; i < rightArray.length; i++) {
@@ -32,6 +32,7 @@ public class MergeSort {
 
         // Copying from leftArray and rightArray back into array
         for (int i = lowestIndex; i < highestIndex + 1; i++) {
+            // If there are still un-copied elements in Right array  and Left array, copy minimum of the two
             if (leftIndex < leftArray.length && rightIndex < rightArray.length) {
                 if (leftArray[leftIndex] < rightArray[rightIndex]) {
                     array[i] = leftArray[leftIndex];
@@ -41,8 +42,10 @@ public class MergeSort {
                     rightIndex++;
                 }
             } else if (leftIndex < leftArray.length) {
+                // If all elements have been copied from rightArray, copy rest of leftArray
                 array[i] = leftArray[leftIndex];
             } else if (rightIndex < rightArray.length) {
+                // If all elements have been copied from leftArray, copy rest of rightArray
                 array[i] = rightArray[rightIndex];
             }
         }
