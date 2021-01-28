@@ -44,9 +44,11 @@ public class MergeSort {
             } else if (leftIndex < leftArray.length) {
                 // If all elements have been copied from rightArray, copy rest of leftArray
                 array[i] = leftArray[leftIndex];
+                leftIndex++;
             } else if (rightIndex < rightArray.length) {
                 // If all elements have been copied from leftArray, copy rest of rightArray
                 array[i] = rightArray[rightIndex];
+                rightIndex++;
             }
         }
     }

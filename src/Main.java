@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         SecureRandom random = new SecureRandom();
-        int[] array = new int[5];
+        int[] array = new int[20];
 
         for (int i = 0; i < array.length; i++) {
             array[i] = 10 + random.nextInt(90);
