@@ -19,11 +19,11 @@ public class MergeSort {
 
         // Copying our sub Arrays into temporaries
         for (int i = 0; i < leftArray.length; i++) {
-            leftArray[i] = array[lowestIndex + i]; //left array holds left half our
+            leftArray[i] = array[lowestIndex + i]; //left array holds left half our split array
         }
 
         for (int i = 0; i < rightArray.length; i++) {
-            rightArray[i] = array[middleIndex + i + 1];
+            rightArray[i] = array[middleIndex + i + 1]; //right array hold the right half of our split array
         }
 
         // Iterators containing current index of temp sub Arrays
