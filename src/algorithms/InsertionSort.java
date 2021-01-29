@@ -2,7 +2,6 @@ package algorithms;
 
 public class InsertionSort {
     public static void performSort(int[] data) {
-
         for (int currentIndex = 1; currentIndex < data.length; currentIndex++) {
             int insertValue = data[currentIndex];
             int moveIndex = currentIndex;
@@ -14,6 +13,5 @@ public class InsertionSort {
             }
             data[moveIndex] = insertValue;
         }
-
     }
 }
