@@ -1,4 +1,4 @@
-package Algorithms;
+package algorithms;
 
 public class InsertionSort {
     public static void performSort(int[] data) {

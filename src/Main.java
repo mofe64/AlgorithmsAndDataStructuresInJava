@@ -1,5 +1,5 @@
-import Algorithms.InsertionSort;
-import Algorithms.MergeSort;
+import algorithms.InsertionSort;
+import algorithms.MergeSort;
 
 import java.security.SecureRandom;
 import java.util.Arrays;
